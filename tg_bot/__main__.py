@@ -161,8 +161,7 @@ def start(bot: Bot, update: Update, args: List[str]):
 
 
     else:
-        update.effective_message.reply_text("Heya,༄➳☆°᭄ᶦᶰᵈ✰αท∂૨૯α™ ᭄✰࿐ Here💃
-How can I help you? 🙂")
+        update.effective_message.reply_text("yo,whadup?🤧")
 
 
 def send_start(bot, update):
