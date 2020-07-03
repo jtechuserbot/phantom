@@ -34,7 +34,7 @@ def music(bot: Bot, update: Update, args):
 
 	elif not video_id.find('youtu.be') != -1:
 		message.reply_text("Please provide me youtube link")
-		message.delete()
+	
 
         
 
@@ -59,7 +59,7 @@ def music(bot: Bot, update: Update, args):
 			payload = json2_response['payload']
 
 			info = '*{0}* \nUploaded by @Anjaly_bot'.format(payload['fulltitle'])
-
+                        message.delete()
 			try:
 				
 				bot.send_audio(chat_id=chatId, audio=json2_response['url'] ,parse_mode='Markdown',text="meanya", caption=info)
