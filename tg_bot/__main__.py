@@ -27,13 +27,6 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-
-┈┈┈┈╱▔▔▔▔╲┈┈┈┈
-┈┈┈▕▕╲┊┊╱▏▏┈┈┈
-┈┈┈▕▕▂╱╲▂▏▏┈┈┈
-┈┈┈┈╲┊┊┊┊╱┈┈┈┈
-┈┈┈┈▕╲▂▂╱▏┈┈┈┈
-╱▔▔▔▔┊┊┊┊▔▔▔▔╲
 HOI    {}, MY NAME IS {} !
 
 I AM A GROUP MANAGER BOT MAINTAINED BY 
@@ -41,12 +34,6 @@ I AM A GROUP MANAGER BOT MAINTAINED BY
 [THIS LEGEND](tg://user?id={}).
 
 HIT HELP FOR COMMANDS  /help
-
-I AM COMPLETELY OPEN SOURCE
-
-MY SOURCE CODE IS AVAILABLE TO YOU
-
-[HERE](https://github.com/DONOFTELEGRAM/phantom)
 
 """
 
