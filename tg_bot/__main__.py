@@ -27,13 +27,15 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-HOI    {}, MY NAME IS {} !
+ഹായ് {},ഇത് ഞാനാ നിങ്ങടെ {} !
 
-I AM A GROUP MANAGER BOT MAINTAINED BY 
+നിങ്ങടെ ഗ്രൂപ്പ്‌ ഇനി മുതൽ ഞാൻ നോക്കാംട്ടാ...
 
-[THIS LEGEND](tg://user?id={}).
+കുറുമ്പ് ഇച്ചിരി കൂടുതലുണ്ടേലും ഞാൻ പാവാണ്‌ട്ടാ
 
-HIT HELP FOR COMMANDS  /help
+അല്ലേടാ @JiNikuttan മുത്തുമണിയേ.. 
+
+ദിങ്ങനെ /help ന്ന് അടിച്ചേ അപ്പോ ആ കമാൻഡ്സൊക്കെ വരണത് കാണാം 
 
 """
 
@@ -148,7 +150,7 @@ def start(bot: Bot, update: Update, args: List[str]):
 
 
     else:
-        update.effective_message.reply_text("yo,whadup?🤧")
+        update.effective_message.reply_text("മുത്തുമണിയേ 🥰🥰")
 
 
 def send_start(bot, update):
