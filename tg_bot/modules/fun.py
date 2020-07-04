@@ -14,7 +14,7 @@ from tg_bot.modules.helper_funcs.extraction import extract_user
 
 
 @run_async
-def love(bot: Bot, update: Update):
+def luv(bot: Bot, update: Update):
     update.effective_message.reply_text(random.choice(fun_strings.RUN_STRINGS))
 
 
@@ -120,7 +120,7 @@ def table(bot: Bot, update: Update):
 
 
 __help__ = """
- - /love: reply a random string from an array of replies.
+ - /luv: reply a random string from an array of replies.
  - /slap: slap a user, or get slapped if not a reply.
  - /shrug : get shrug XD.
  - /table : get flip/unflip :v.
@@ -131,7 +131,7 @@ __help__ = """
  - /rlg : Join ears,nose,mouth and create an emo ;-;
 """
 
-RUNS_HANDLER = DisableAbleCommandHandler("love", love)
+RUNS_HANDLER = DisableAbleCommandHandler("luv", luv)
 SLAP_HANDLER = DisableAbleCommandHandler("slap", slap, pass_args=True)
 ROLL_HANDLER = DisableAbleCommandHandler("roll", roll)
 TOSS_HANDLER = DisableAbleCommandHandler("toss", toss)
@@ -152,6 +152,6 @@ dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
 
 __mod_name__ = "Fun"
-__command_list__ = ["love", "slap", "roll", "toss", "shrug", "bluetext", "rlg", "decide", "table"]
+__command_list__ = ["luv", "slap", "roll", "toss", "shrug", "bluetext", "rlg", "decide", "table"]
 __handlers__ = [RUNS_HANDLER, SLAP_HANDLER, ROLL_HANDLER, TOSS_HANDLER, SHRUG_HANDLER, BLUETEXT_HANDLER, RLG_HANDLER,
                 DECIDE_HANDLER, TABLE_HANDLER]
