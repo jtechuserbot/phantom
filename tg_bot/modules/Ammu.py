@@ -20,7 +20,6 @@ SFW_STRINGS = (
     "നീ പോടാ മങ്കി ഡോങ്കീ",
     "ഡാ കൊരങ്ങാ",
     "നീ പോടാ കാട്ടുകോഴി",
-    "പോയി ചത്തൂടെ നിനക്ക്",
     "അമ്പട കള്ളാ 🤭🤭",
     "മ.. മ.. അല്ലേൽ അത് വേണ്ട.. മത്തങ്ങാതലയാ",
     "മാങ്ങാണ്ടി മോറാ",
@@ -40,11 +39,11 @@ def dark(bot: Bot, update: Update):
       message.reply_text(random.choice(SFW_STRINGS))
 
 __help__ = """
-- /dark  🤬.
+- /ammu  🤬.
 """
 
-__mod_name__ = "Abuse"
+__mod_name__ = "Ammu"
 
-DARK_HANDLER = DisableAbleCommandHandler("dark", dark)
+DARK_HANDLER = DisableAbleCommandHandler("ammu", ammu)
 
 dispatcher.add_handler(DARK_HANDLER)
