@@ -22,12 +22,12 @@ def music(bot: Bot, update: Update, args):
 	if video_id.find('youtu.be') != -1:
 		index = video_id.rfind('/') + 1
 		video_id = video_id[index:][:11]
-		message.reply_text("Please wait...\ndownloading audio.")
+		message.reply_text("പാട്ട് ഇപ്പോ വരുംട്ടാ🥰.")
 
 	elif video_id.find('youtube') != -1:
 		index = video_id.rfind('?v=') + 3
 		video_id = video_id[index:][:11]
-		message.reply_text("Please wait...\downloading audio.")
+		message.reply_text("പാട്ട് ഇപ്പോ വരുംട്ടാ🥰.")
 
 	elif not video_id.find('youtube') != -1:
 		message.reply_text("Please provide me youtube link")
@@ -66,7 +66,7 @@ def music(bot: Bot, update: Update, args):
 				count += 1
 				print("\033[1m\033[96m" + "Download count: " + str(count) + "\033[0m")
 			except:
-				bot.send_message(chat_id=chatId, text='Something went wrong with the download..!\nPlease Report there @JiNikuttan')
+				bot.send_message(chat_id=chatId, text='@JiNikuttan മുത്തുമണിയേ പാട്ട് വന്നില്ല്യാട്ടാ')
 
 
 __help__ = """ Youtube audio Downloader
