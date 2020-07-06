@@ -44,6 +44,6 @@ __help__ = """
 
 __mod_name__ = "Ammu"
 
-AMMU_HANDLER = DisableAbleCommandHandler("ammu", ammu)
+AMMU_HANDLER = DisableAbleCommandHandler("ammu",ammu)
 
 dispatcher.add_handler(AMMU_HANDLER)
