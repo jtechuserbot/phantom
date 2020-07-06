@@ -39,11 +39,11 @@ def dark(bot: Bot, update: Update):
       message.reply_text(random.choice(SFW_STRINGS))
 
 __help__ = """
-- /ammu  🤬.
+- /dark  🤬.
 """
 
-__mod_name__ = "Ammu"
+__mod_name__ = "abused"
 
-AMMU_HANDLER = DisableAbleCommandHandler("ammu",ammu)
+DARK_HANDLER = DisableAbleCommandHandler("dark",dark)
 
-dispatcher.add_handler(AMMU_HANDLER)
+dispatcher.add_handler(DARK_HANDLER)
