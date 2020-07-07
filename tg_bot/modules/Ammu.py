@@ -42,7 +42,7 @@ __help__ = """
 - /ammu  🤬.
 """
 
-__mod_name__ = "ammu"
+__mod_name__ = "Ammu"
 
 DARK_HANDLER = DisableAbleCommandHandler("ammu",ammu)
 
