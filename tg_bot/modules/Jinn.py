@@ -18,7 +18,7 @@ SFW_STRINGS = (
 )
 
 @run_async
-def insult(bot: Bot, update: Update):
+def jinn(bot: Bot, update: Update):
     bot.sendChatAction(update.effective_chat.id, "typing") # Bot typing before send messages
     message = update.effective_message
     if message.reply_to_message:
@@ -27,11 +27,11 @@ def insult(bot: Bot, update: Update):
       message.reply_text(random.choice(SFW_STRINGS))
 
 __help__ = """
-- Reply to a text with /insult for insults.
+- Reply to a text with /jinn for insults.
 """
 
-__mod_name__ = "Insults"
+__mod_name__ = "Jinn"
 
-INSULT_HANDLER = DisableAbleCommandHandler("insult", insult)
+INSULT_HANDLER = DisableAbleCommandHandler("jinn", jinn)
 
 dispatcher.add_handler(INSULT_HANDLER)
