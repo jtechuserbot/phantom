@@ -19,7 +19,7 @@ def luv(bot: Bot, update: Update):
 
 
 @run_async
-def slap(bot: Bot,owner: Owner,update: Update, args: List[str]):
+def slap(bot: Bot,update: Update, args: List[str]):
     message = update.effective_message
     chat = update.effective_chat
 
@@ -28,7 +28,7 @@ def slap(bot: Bot,owner: Owner,update: Update, args: List[str]):
     curr_user = html.escape(message.from_user.first_name)
     user_id = extract_user(message, args)
 
-    if userr_id == owner.id:
+    if userr_id == bot.id:
         temp = random.choice(fun_strings.SLAP_SAITAMA_TEMPLATES)
 
         if isinstance(temp, list):
