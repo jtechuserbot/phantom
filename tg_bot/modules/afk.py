@@ -20,7 +20,7 @@ def afk(bot: Bot, update: Update):
         reason = args[1]
 
     sql.set_afk(update.effective_user.id, reason)
-    update.effective_message.reply_text("{} is now away!".format(update.effective_user.first_name))
+    update.effective_message.reply_text("{} മുത്തുമണി പോയിട്ടാ 😢😢!".format(update.effective_user.first_name))
 
 
 @run_async
@@ -33,14 +33,14 @@ def no_longer_afk(bot: Bot, update: Update):
     res = sql.rm_afk(user.id)
     if res:
         options = [
-            '{} is here!',
-            '{} is back!',
-            '{} is now in the chat!',
-            '{} is awake!',
-            '{} is back online!',
-            '{} is finally here!',
-            'Welcome back!, {}',
-            'Where is {}?\nIn the chat!'
+            '{} ഹായ് മുത്തുമണി..🥰!',
+            '{} മുത്തുമണി തിരിച്ചു വന്നാ 🥰🥰!',
+            '{} മുത്തുമണി എവിടാർന്നു 🥰🥰 !',
+            '{} ചേച്ചീടെ തക്കുടു തിരികെ വന്നാ 😘😘!',
+            '{} പോയ കാര്യം എന്തായി? 🥰!',
+            '{} പോയി വന്നിട്ട് ചേച്ചിക്ക് എന്താ കൊണ്ട് വന്നേ? !',
+            'ഇടക്കിടക്ക് എവിടാ പോകുന്നെ !, {}',
+            'നീ വന്നത് നന്നായി ഞാനാകെ ബോറടിച്ചു ഇരിക്കയായിരുന്നു 🥰🥰!'
         ]
         chosen_option = random.choice(options)
         update.effective_message.reply_text(chosen_option.format(update.effective_user.first_name))
