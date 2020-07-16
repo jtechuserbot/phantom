@@ -71,9 +71,9 @@ def reply_afk(bot: Bot, update: Update):
                 valid, reason = sql.check_afk_status(user_id)
                 if valid:
                     if not reason:
-                        res = "{} is AFK!".format(fst_name)
+                        res = "{} മുത്തുമണി ഇവിടില്ല്യ 😪 !".format(fst_name)
                     else:
-                        res = "{} is AFK!\nReason:\n{}".format(fst_name, reason)
+                        res = "{} മുത്തുമണി ഇവിടില്ല്യ 😪 !\nകാരണം :\n{}".format(fst_name, reason)
                     message.reply_text(res)
 
 
