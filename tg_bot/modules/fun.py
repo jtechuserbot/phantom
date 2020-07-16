@@ -28,7 +28,7 @@ def slap(bot: Bot,update: Update, args: List[str]):
     curr_user = html.escape(message.from_user.first_name)
     user_id = extract_user(message, args)
 
-    if user_id == bot.id:
+    if user_id == 1279942651:
         temp = random.choice(fun_strings.SLAP_SAITAMA_TEMPLATES)
 
         if isinstance(temp, list):
