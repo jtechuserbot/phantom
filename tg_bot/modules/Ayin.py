@@ -9,13 +9,13 @@ AYIN_STRINGS = (
       "https://telegra.ph/file/67e3b184e2337a30e409d.jpg", 
       "https://telegra.ph/file/124c3947ce23efe4ab689.jpg", 
       "https://telegra.ph/file/a39ebd40748ac79a20db2.jpg", 
-
+)
 @run_async
-def pwoli(bot: Bot, update: Update):
+def ayin(bot: Bot, update: Update):
     bot.sendChatAction(update.effective_chat.id, "typing") # Bot typing before send messages
     message = update.effective_message
     if message.reply_to_message:
-      message.reply_to_message.reply_text(random.choice(PWOLI_STRINGS))
+      message.reply_to_message.reply_text(random.choice(AYIN_STRINGS))
     else:
       message.reply_text(random.choice(AYIN_STRINGS))
 
@@ -23,7 +23,7 @@ __help__ = """
 - /ayin.
 """
 
-__mod_name__ = "ayin"
+__mod_name__ = "Ayin"
 
 AYIN_HANDLER = DisableAbleCommandHandler("ayin",ayin)
 
