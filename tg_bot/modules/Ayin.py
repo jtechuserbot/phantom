@@ -4,20 +4,22 @@ from telegram import Message, Chat, Update, Bot, MessageEntity
 from tg_bot import dispatcher
 from tg_bot.modules.disable import DisableAbleCommandHandler
 
-AYIN_IMG = (
-      "https://telegra.ph/file/76c095429d6371f4417bb.jpg", 
-      "https://telegra.ph/file/67e3b184e2337a30e409d.jpg", 
-      "https://telegra.ph/file/124c3947ce23efe4ab689.jpg", 
-      "https://telegra.ph/file/a39ebd40748ac79a20db2.jpg", 
+AYIN_STRINGS = (
+      "അയിന് പോയി തല കുത്തി നിക്ക് 🤭🤭", 
+      "അയിന് കുയിനെന്നു പറഞ്ഞു വന്നാൽ അടിച്ചു മണ്ട പൊളിക്കും ഞാൻ 😡😡", 
+      "അയിന് അങ്ങട് മാറി നിക്ക് 🤭🤭", 
+      "അയിന് പോയി തൂങ്ങി ചാവ് 🤭🤗",
+      "അയിന് നീ ഏതാടാ😡🤭", 
+
 )
 @run_async
 def ayin(bot: Bot, update: Update):
     bot.sendChatAction(update.effective_chat.id, "typing") # Bot typing before send messages
     message = update.effective_message
     if message.reply_to_message:
-      message.reply_to_message.reply_text(random.choice(AYIN_IMG))
+      message.reply_to_message.reply_text(random.choice(AYIN_STRINGS))
     else:
-      message.reply_text(random.choice(AYIN_IMG))
+      message.reply_text(random.choice(AYIN_STRINGS))
 
 __help__ = """
 - /ayin🤗
