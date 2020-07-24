@@ -30,18 +30,14 @@ SFW_STRINGS = (
   )
 
 @run_async
-def ammu(bot: Bot, update: Update, args: List[str]):
+def ammu(bot: Bot, update: Update):
     bot.sendChatAction(update.effective_chat.id, "typing") # Bot typing before send messages
     message = update.effective_message
     if message.reply_to_message:
       message.reply_to_message.reply_text(random.choice(SFW_STRINGS))
     else:
       message.reply_text(random.choice(SFW_STRINGS))
-      curr_user = html.escape(message.from_user.first_name)
-    user_id = extract_user(message, args)
-
-    if user_id == 1279942651:
-        temp = random.choice(fun_strings.SLAP_SAITAMA_TEMPLATES)
+      
 
 __help__ = """
 - /ammu  🤬.
