@@ -10,7 +10,7 @@ from tg_bot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
-def lyrics(bot: Bot, update: Update, args):
+def lcs(bot: Bot, update: Update, args):
     msg = update.effective_message
     query = " ".join(args)
     song = ""
@@ -40,7 +40,7 @@ def lyrics(bot: Bot, update: Update, args):
 __help__ = """
 Want to get the lyrics of your favorite songs straight from the app? This module is perfect for that!
 *Available commands:*
- - /lyrics <song>: returns the lyrics of that song.
+ - /lcs <song>: returns the lyrics of that song.
  You can either enter just the song name or both the artist and song name.
 """
 
@@ -48,6 +48,6 @@ __mod_name__ = "Songslyrics"
 
 
 
-LYRICS_HANDLER = DisableAbleCommandHandler("lyrics", lyrics, pass_args=True)
+LYRICS_HANDLER = DisableAbleCommandHandler("lcs", lcs, pass_args=True)
 
 dispatcher.add_handler(LYRICS_HANDLER)
