@@ -37,6 +37,6 @@ __help__ = """
 
 __mod_name__ = "kgf"
 
-AYIN_HANDLER = DisableAbleCommandHandler("kgf",kgf)
+KGF_HANDLER = DisableAbleCommandHandler("kgf",kgf)
 
 dispatcher.add_handler(KGF_HANDLER)
