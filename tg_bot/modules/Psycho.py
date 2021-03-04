@@ -28,7 +28,7 @@ PSYCHO_STRINGS = (
 
 
 @run_async
-def psycho(bot: Bot, update: Update):
+def psy(bot: Bot, update: Update):
     bot.sendChatAction(update.effective_chat.id, "typing") # Bot typing before send messages
     message = update.effective_message
     if message.reply_to_message:
@@ -37,11 +37,11 @@ def psycho(bot: Bot, update: Update):
       message.reply_text(random.choice(PSYCHO_STRINGS))
 
 __help__ = """
-- /psycho.
+- /psy.
 """
 
 __mod_name__ = "Psycho😌"
 
-PSYCHO_HANDLER = DisableAbleCommandHandler("psycho",psycho)
+PSYCHO_HANDLER = DisableAbleCommandHandler("psy",psy)
 
 dispatcher.add_handler(PSYCHO_HANDLER)
