@@ -58,3 +58,16 @@ def cyp(bot: Bot,update: Update, args: List[str]):
 
     reply_text(reply, parse_mode=ParseMode.HTML)
 
+
+
+JINN_HANDLER = DisableAbleCommandHandler("cyp", cyp, pass_args=True)
+
+dispatcher.add_handler(JINN_HANDLER)
+
+
+
+
+__mod_name__ = "Myfun"
+__command_list__ = ["cyp"]
+__handlers__ = [JINN_HANDLER]
+
