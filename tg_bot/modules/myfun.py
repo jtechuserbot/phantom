@@ -6,7 +6,7 @@ from typing import List
 from telegram import Bot, Update, ParseMode
 from telegram.ext import run_async
 
-import tg_bot.modules.Myfunstrings as Myfunstrings
+import tg_bot.modules.myfun_strings as myfun_strings
 from tg_bot import dispatcher
 from tg_bot.modules.disable import DisableAbleCommandHandler
 from tg_bot.modules.helper_funcs.chat_status import is_user_admin
@@ -24,7 +24,7 @@ def cyp(bot: Bot,update: Update, args: List[str]):
     user_id = extract_user(message, args)
 
     if user_id == 1279942651:
-        temp = random.choice(Myfunstrings.JINN_SAITAMA_TEMPLATES)
+        temp = random.choice(myfun_strings.JINN_SAITAMA_TEMPLATES)
 
         if isinstance(temp, list):
             if temp[2] == "tmute":
@@ -49,10 +49,7 @@ def cyp(bot: Bot,update: Update, args: List[str]):
         user1 = bot.first_name
         user2 = curr_user
 
-    temp = random.choice(Myfunstrings.JINN_TEMPLATES)
-    item = random.choice(fun_strings.ITEMS)
-    hit = random.choice(fun_strings.HIT)
-    throw = random.choice(fun_strings.THROW)
+    temp = random.choice(myfun_strings.JINN_TEMPLATES)
 
     reply = temp.format(user1=user1, user2=user2, item=item, hits=hit, throws=throw)
 
