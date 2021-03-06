@@ -21,3 +21,15 @@ JINN_SAITAMA_TEMPLATES = (
         "tmute"  # command
     ]
 )
+
+
+ITEMS = (
+    "cast iron skillet",
+)
+
+THROW = (
+    "എറിഞ്ഞു",
+)
+
+HIT = (
+    "അടിച്ചു",
