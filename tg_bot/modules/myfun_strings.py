@@ -23,15 +23,15 @@ JINN_SAITAMA_TEMPLATES = (
 )
 
 
-ITEMS = (
+ITEM = (
     "cast iron skillet",
 )
 
-THROW = (
+THRO = (
     "എറിഞ്ഞു",
 )
 
-HIT = (
+HI = (
     "അടിച്ചു",
 )
 
