@@ -50,6 +50,9 @@ def cyp(bot: Bot,update: Update, args: List[str]):
         user2 = curr_user
 
     temp = random.choice(myfun_strings.JINN_TEMPLATES)
+    item = random.choice(myfun_strings.ITEMS)
+    hit = random.choice(myfun_strings.HIT)
+    throw = random.choice(myfun_strings.THROW)
 
     reply = temp.format(user1=user1, user2=user2, item=item, hits=hit, throws=throw)
 
