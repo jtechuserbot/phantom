@@ -50,9 +50,9 @@ def cyp(bot: Bot,update: Update, args: List[str]):
         user2 = curr_user
 
     temp = random.choice(myfun_strings.JINN_TEMPLATES)
-    item = random.choice(myfun_strings.ITEMS)
-    hit = random.choice(myfun_strings.HIT)
-    throw = random.choice(myfun_strings.THROW)
+    item = random.choice(myfun_strings.ITEM)
+    hit = random.choice(myfun_strings.HI)
+    throw = random.choice(myfun_strings.THRO)
 
     reply = temp.format(user1=user1, user2=user2, item=item, hits=hit, throws=throw)
 
@@ -65,7 +65,8 @@ JINN_HANDLER = DisableAbleCommandHandler("cyp", cyp, pass_args=True)
 dispatcher.add_handler(JINN_HANDLER)
 
 
-
+__help__ = """
+- /cyp
 
 __mod_name__ = "Myfun"
 __command_list__ = ["cyp"]
