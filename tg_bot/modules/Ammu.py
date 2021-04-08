@@ -25,7 +25,9 @@ SFW_STRINGS = (
     "എന്താ മോനൂസേ ജാടയാണോ?",
     "അത് നീ പള്ളീ പോയി പറഞ്ഞാ മതി",
     "നിന്റെ മണ്ടേലെന്താ കളിമണ്ണാണോ",
-    "നിന്റെ ഉണ്ടക്കണ്ണു ഞാൻ കുത്തിപ്പൊട്ടിക്കും" 
+    "നിന്റെ ഉണ്ടക്കണ്ണു ഞാൻ കുത്തിപ്പൊട്ടിക്കും"
+    "CAACAgQAAx0CROtnBAACFtVgbkbuHELksY85RONDSQhJ1by-KgACpRcAAtqjlSxcJA_UfsycMR4E",
+     
   )
 
 @run_async
